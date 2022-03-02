@@ -3,7 +3,7 @@ const projets = {
         {
             Nom:"MathKid",
             Description:"Application permettant d'enseigner les maths au 9-12 ans",
-            Image:"malickruru/malickruru.github.io/img/mathkid.png",
+            Image:"img/mathkid.png",
             lien_code_source:"https://github.com/malickruru/MathKid",
             lien:"https://malickruru.github.io/MathKid/"
         },

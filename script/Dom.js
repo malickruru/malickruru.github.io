@@ -77,7 +77,7 @@ function displayProject(categorie){
     document.getElementById("contenu").innerHTML="";
     projets[categorie].forEach(elem => {
         listeProjets += "<div class='carteProjet'>" ;
-        listeProjets += "<img src= ' "+elem.Image+" ' >";
+        listeProjets += "<img src=  "+elem.Image+"  >";
         listeProjets += "<div class='descriptionProjet'>";
         listeProjets += "<h2>"+elem.Nom+"</h2>";
         listeProjets += "<p class='display-7'>"+elem.Description+"</p>";

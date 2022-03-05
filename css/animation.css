@@ -1,0 +1,47 @@
+@keyframes Fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Fadeup {
+  animation-name: Fadeup;
+  animation-duration: 1.5s;
+}
+
+@keyframes Faderight {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.FadeRight {
+  animation-name: Faderight;
+  animation-duration: 1.5s;
+}
+
+@keyframes FadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.FadeLeft {
+  animation-name: FadeLeft;
+  animation-duration: 1.5s;
+}

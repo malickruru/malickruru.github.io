@@ -1,102 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/boostrapLite.css">
-    
-    <!-- icones -->
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <title>Rubens Mensah</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
-  </head>
-  <body>
-    
-    <!-- SIDEBAR -->
-    
-        <div class="d-flex flex-column   j-content-spaceBetween " id="Menu" style="width: 15vw;">
-            
-           <div class="textCenter">
-            <h2> RUBENS MENSAH</h2>
-            <i class="bi bi-list" id="menu-toggle"></i>
-           </div> 
-          
+</head>
+<body>
+    <header class="header d-flex j-content-between">
+        <div> <a href="#accueil"><h3>Rubens Mensah.</h3></a></div>
+        <ul class="nav-menu d-flex ">
+         <li><a href="#projet">Projets</a></li>
+         <li><a href="#Apropos">A propos</a></li>
+         <li><a href="#contact">Contact</a></li>
+        </ul>
 
-        
-            <div class=" flex-column " id="menuLateral">
-                <li class="lien lien-actif" onclick="changeactive(0)"> <span > Accueil </span> <br> <div class="underline"></div></li>
-                <li class="lien" onclick="changeactive(1,686)"><span> Mes projets </span> <br> <div class="underline"></div></li>
-                <li class="lien" onclick="changeactive(2,1600)"><span> A propos </span> <br> <div class="underline"></div></li>
-                <li class="lien" onclick="changeactive(3,1600)"><span> Contact </span> <br> <div class="underline"></div></li>
-             </div>
-            
-            <div class="textCenter" onclick="Changetheme(false)" id="changetheme"><i class="bi bi-moon"></i></div>
-          </div>
-   <!-- main section -->
-   <main>
-     <!-- accueil -->
-     <div id="canvas-wrap">
-      <div class="Accueil" >
-        <h1 class="titre-principale">RUBENS </h1>
-        <h1 class="titre-principale">MENSAH </h1>
-        <p class="sous-titre">developpeur web</p>  
-      </div>
-
-     </div>
-     <!-- Mes projets -->
-      <div>
-       <div class="content display-6"><h1>MES PROJETS</h1>
-      </div>
-       
-      <div class="content">
-         <span  class="categorieProjet sous-titre categorieProjet-actif display-6" onclick="changeactiveProjet(0,'webApp')">Applications & site web</span>
-        <span  class="categorieProjet sous-titre display-6" onclick="changeactiveProjet(1,'jeux')">Jeux</span>
-      </div>
-      
-      <div id="contenu" class="content">
-        
+        <div class="menu-toggle" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-     </div>
+    </header>
 
+    <div class="nav-menu-mobile" id="nav-menu-mobile">
        
-     </div>
-     <!-- A propos  -->
-     <div>
-      <div>
-        <div class="content display-6"><h1>JE M'APPELLE RUBENS</h1>
-       </div>
+        <ul>
+            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+            <li><a href="#projet">Projets</a></li>
+            <li><a href="#Apropos">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul>
+    </div> 
 
-       <div class="content display-7 apropos d-flex "><pre>
-        Je suis dévellopeur web spécialisé frontend originaire de Côte d'ivoire.
-        Mon travail consiste à concevoir des solutions pour le web,et des jeux vidéo.
-        Je suis capable de porter un projet utilisant le framework react.js,
-        le CMS wordpress ou tout simplement en Javascript Vanilla.
-       </pre>
-       </div>
-     </div>
-      <!-- Contact  -->
-      <div>
+    <section class="d-flex flex-column j-content-center section" id="accueil" >
+        <div class="textCenter"><h3>Salut, je m'appelle Rubens &#128075; </h3></div>
+        <div class="textCenter"><h1>Je Conçois des solutions pour le web</h1></div>
+        <div class="textCenter"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum soluta enim veritatis minima molestias corporis itaque eum eius provident! Recusandae debitis vitae temporibus perspiciatis impedit. In pariatur nam eveniet.</p>
+        </div>
+        <div class="textCenter"><a href="mailto:rubs99rstd@gmail.com?subject=Sujet" class="btn">CONTACTEZ-MOI</a></div>
+    </section>
+
+    <!-- projet -->
+    <section class="section px-0" id="projet">
+        <div class="textCenter"><h1 id="titreProjet">Mes projets</h1></div>
+        <div class="owl-carousel " id="carouselProjet">
+            <div class="projet">
+                <div class="projet-left">
+                    <h1>Projet1</h1>
+                    <span ></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                    <div class="projet-icon">
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-arrow-up-right-square"></i>
+                    </div>
+                   
+                </div>
+                <div class="projet-right">
+                    <img src="img/WhatsApp Image 2022-03-03 at 12.36.00.jpeg" alt="">
+                </div>
+                
+            </div>
+    
+            <div class="projet">
+                <div class="projet-left">
+                <h1>Projet2</h1>
+                <span ></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                <div class="projet-icon">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </div>
+                </div>
+                <div class="projet-right">
+                    <img src="img/WhatsApp Image 2022-03-03 at 12.36.01 (1).jpeg" alt="">
+                </div>
+                
+            </div>
+    
+            <div class="projet">
+                <div class="projet-left">
+                    <h1>Projet3</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                <div class="projet-icon">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </div>
+                </div>
+                <div class="projet-right"><img src="img/WhatsApp Image 2022-03-03 at 12.36.01 (2).jpeg" alt=""></div>
+            </div>
+    
+            <div class="projet">
+                <div class="projet-left">
+                    <h1>Projet4</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                <div class="projet-icon">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </div>
+                </div>
+                <div class="projet-right">
+                    <img src="img/WhatsApp Image 2022-03-03 at 12.36.01.jpeg" alt="">
+                </div>
+                
+            </div>
+    
+            <div class="projet">
+                <div class="projet-left">
+                    <h1>Projet5</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                <div class="projet-icon">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </div>
+                </div>
+                <div class="projet-right">
+                    <img src="img/WhatsApp Image 2022-03-03 at 12.36.02 (1).jpeg" alt="">
+                </div>
+               
+            </div>
+    
+            <div class="projet">
+                <div class="projet-left">
+                   <h1>Projet6</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla porro accusantium amet. Magnam doloribus necessitatibus possimus ipsam nobis enim similique tempora, ipsum voluptas dolorem sint dicta corporis veritatis atque.</p>
+                <div class="projet-icon">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-arrow-up-right-square"></i>
+                </div>
+                </div>
+                <div class="projet-right">
+                    <img src="img/WhatsApp Image 2022-03-03 at 12.36.02.jpeg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   <!-- a propos -->
+
+    <section class="d-flex sectionApropos section " id="Apropos">
+        <div class="img-apropos">
+            <img  class="photo-profil" src="img/ruru.jpeg" alt="">
+        </div>
         <div>
-          <div class="content display-6"><h1>CONTACTEZ-MOI</h1>
-         </div>
-  
-         <div class="content display-7 contact d-flex j-content-center">
-          <a href="https://www.instagram.com/malickmensah/"><i class="bi bi-instagram"></i></a>
-          <a href="https://twitter.com/MalickMensah"><i class="bi bi-twitter"></i></a>
+            <p>WEB DEVELOPER</p>
+            <h1>RUBENS MENSAH</h1>
+            <p>Je suis développeur web spécialisé front-end originaire de Côte d'ivoire.
+                Mon travail consiste à concevoir des solutions pour le web,et des jeux
+                vidéo. Je suis capable de porter un projet utilisant le framework react.js,
+                le CMS wordpress ou tout simplement en Javascript Vanilla.</p>
+            <a download href="assets/cv.pdf" class="btn">TELECHARGER MON CV</a>
+            <a href="mailto:rubs99rstd@gmail.com?subject=Sujet"  class="btn">CONTACTEZ-MOI</a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footerIcon">
+            <a href="https://github.com/malickruru"><i class="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/rubens-mensah-609b3b172/"><i class="bi bi-linkedin"></i></a>
           <a href="mailto:rubs99rstd@gmail.com?subject=Sujet"><i class="bi bi-envelope"></i></a>
-         </div>
-         
-       </div>
-      </div>
-        <!-- bonus  -->
-     <div></div>
-   </main>
-   <script src="script/MesProjet.js"></script>
-   <script src="script/canvas.js"></script>
-   <script src="script/Dom.js"></script>
-      </body>
+        </div>
+        <div class="copyright">
+            <p> &copy; 2022 - Rubens Mensah - développeur web </p>
+        </div>
+    </footer>
+
+    <!-- animatiob -->
+    <script src="script/animation.js"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script>
+       $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:70,
+    autoplay:true,
+    stagePadding: 150,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 50,
+            margin:10,
+        },
+        376:{
+            items:1,
+            margin:30,
+            stagePadding: 110
+        },
+        768:{
+            items:1
+        }
+    }
+})
+    </script>
+    
+    <script>
+        function openMenu(){
+            document.getElementById("nav-menu-mobile").style.height="100vh";
+        }
+        function closeMenu(){
+            document.getElementById("nav-menu-mobile").style.height="0vh";
+        }
+    </script>
+
+</body>
 </html>

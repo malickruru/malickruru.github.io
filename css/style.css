@@ -4,10 +4,10 @@
 @import url(apropos.css);
 @import url(footer.css);
 @import url(animation.css);
-/* @import url(loader.css); */
+@import url(loader.css);
 :root {
-  --color1: #fff;
-  --color2: #000;
+  --color1: #121212;
+  --color2: #fff;
   /* --color3: #00ffd3; */
   --color3: #009b81;
   --font: "Noto sans";
@@ -31,7 +31,7 @@ a {
 
 html {
   scroll-behavior: smooth;
-  cursor: url(cursornoir.png), auto;
+  cursor: url(cursorblanc.png), auto;
 }
 * {
   font-family: var(--font);
@@ -85,6 +85,9 @@ section {
   section {
     height: auto;
   }
+  .cursor {
+    display: none;
+  }
 }
 
 /* cursor */
@@ -98,4 +101,53 @@ section {
   width: 50px;
   height: 50px;
   transition: all 0.3s ease-out;
+}
+
+/* tooltip */
+a.tooltip {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  color: var(--color3);
+}
+
+a.tooltip:hover {
+  cursor: help;
+  position: relative;
+}
+a.tooltip span {
+  display: none;
+}
+
+a.tooltip:hover span {
+  border: #666 2px dotted;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  background: #e3e3e3;
+  left: 50px;
+  margin: 15px;
+  width: 300px;
+  position: absolute;
+  top: -200px;
+  text-decoration: none;
+}
+
+a.tooltip-left:hover span {
+  left: -300px;
+}
+
+.scrollCta {
+  position: absolute;
+  top: 95vh;
+  animation: scroll 1s infinite;
+  font-size: 1.5em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }

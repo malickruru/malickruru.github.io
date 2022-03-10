@@ -6,23 +6,29 @@ var proposDisplayed = false;
 
 
 function display(){
-    
+    accueilDisplay == false ? document.querySelector('#accueil').style.opacity="0":document.querySelector('#accueil').style.opacity="1";
     projetDisplayed == false ? document.querySelector('#projet').style.opacity="0":document.querySelector('#projet').style.opacity="1";
     proposDisplayed == false ? document.querySelector('#Apropos').style.opacity="0":document.querySelector('#Apropos').style.opacity="1";
 }
 
-display()
+// display()
+console.log('ok')
+
 
 var delay = 100;
-console.log(document.getElementById('accueil_wrapper').childNodes)
+
+function firstanime(){
+
 document.getElementById('accueil_wrapper').childNodes.forEach(elem => {
     if(elem.nodeName == "DIV"){
     elem.classList.add('FadeRight');
     elem.style.animationDelay = delay+'ms';
     delay += 200;}
 })
+ accueilDisplay = true;
+ display();
 
-
+}
 
 //calculer le padding
 function padding(elem,previousElem){

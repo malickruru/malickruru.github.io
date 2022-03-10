@@ -52,21 +52,6 @@ const MouseHoverNone = () =>{
 document.querySelector('#changetheme').addEventListener("mouseover", MouseHoverNone);
 document.querySelector('#changetheme').addEventListener("mouseout", MouseOut);
 
-//photo
-
-const MouseHoverPhoto = () =>{
-  circle.style.backgroundColor = '#ea00ff94';
-  circle.style.borderRadius = '0%';
-}
-
-
-const MouseOutPhoto = () =>{
-  circle.style.borderRadius = '50%'; 
-  circle.style.backgroundColor = 'transparent';
-}
-
-document.querySelector('.PhotoHover').addEventListener("mouseover", MouseHoverPhoto);
-document.querySelector('.PhotoHover').addEventListener("mouseout", MouseOutPhoto);
 
 //projectItem
 document.querySelectorAll('.projectItem').forEach(elem => {

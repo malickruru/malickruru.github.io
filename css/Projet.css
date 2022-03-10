@@ -1,0 +1,152 @@
+.projectItem {
+  height: 50vh;
+  border: var(--color2) 1px solid;
+  width: 70vw;
+  display: flex;
+  overflow: hidden;
+  filter: contrast(0.05);
+  cursor: none;
+}
+
+.projectImage {
+  overflow: hidden;
+  width: 60%;
+  border-right: var(--color2) 1px solid;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: all 7000ms ease-out;
+}
+
+.projectImage:hover {
+  background-position: 0% 25%;
+}
+
+.projectTitre {
+  width: 40%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel-nav {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--color1);
+  z-index: 3;
+}
+
+.bi-arrow-bar-left,
+.bi-arrow-bar-right {
+  cursor: none;
+}
+
+.bi-arrow-bar-left,
+.bi-arrow-bar-right,
+.carousel-nav > span {
+  font-size: 2em !important;
+  opacity: 0.7;
+  display: inline-block;
+  transition: all 0.3s ease-out;
+}
+
+.bi-arrow-bar-left:hover {
+  transform: translateX(-5px);
+  opacity: 1;
+}
+.bi-arrow-bar-right:hover {
+  transform: translateX(5px);
+  opacity: 1;
+}
+.Projects {
+  text-align: center;
+  padding: 15px;
+}
+
+.projetDescription {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.projetDescription > a {
+  color: var(--color3);
+  padding: 15px;
+  position: relative;
+}
+
+.projetDescription > a:hover {
+  opacity: 0.7;
+}
+
+.projectTitre:hover .projetDescription {
+  max-height: 50%;
+  opacity: 1;
+}
+
+.projectTitre > h1 {
+  transition: all 0.3s ease-out;
+}
+
+.projectTitre:hover > h1 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sortIcon {
+  margin: 0;
+}
+
+.categorie {
+  font-size: 1em;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: none;
+}
+
+.categorie-active {
+  opacity: 1;
+  border-bottom: var(--color2) 1px solid;
+}
+
+.owl-item.active .projectItem {
+  filter: contrast(1);
+}
+
+@media screen and (max-width: 769px) {
+  .projectItem {
+    height: 70vh;
+    border: var(--color2) 1px solid;
+    max-width: 90vw;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 50%;
+  }
+  .projectTitre {
+    width: 100%;
+    height: 50%;
+    background-color: var(--color1);
+    display: block;
+    padding: 5px;
+  }
+  .projetDescription {
+    max-height: 50%;
+  }
+
+  .carousel-nav {
+    padding: 0px;
+    color: var(--color1);
+  }
+}

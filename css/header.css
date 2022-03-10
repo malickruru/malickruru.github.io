@@ -1,0 +1,122 @@
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--color2) 1px solid;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: var(--color1);
+  z-index: 2;
+}
+
+.brand {
+  background-color: var(--color2);
+  margin: 0;
+  align-items: center;
+  padding: 15px;
+}
+
+.brand > a > h3 {
+  color: var(--color1) !important;
+  cursor: none;
+}
+
+.menu-toggle {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.icon {
+  height: 50px;
+}
+
+.icon2 {
+  height: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu > li {
+  padding: 0 15px;
+}
+
+.nav-menu > li > a {
+  color: var(--color2);
+  position: relative;
+}
+
+.nav-menu > li > i {
+  color: var(--color2);
+}
+
+.nav-menu > li > i:hover {
+  color: var(--color3);
+  cursor: none;
+}
+
+.nav-menu > li > a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: var(--color2);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-menu > li > a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-menu-mobile {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: var(--color1);
+  height: 0vh;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 2em;
+}
+
+.nav-menu-mobile > a {
+  color: var(--color2);
+}
+
+#changetheme2 {
+  color: var(--color2);
+}
+
+.bi-x-lg {
+  color: red;
+  cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

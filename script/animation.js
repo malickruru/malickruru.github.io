@@ -65,3 +65,4 @@ function animeAuScroll(){
 }
 
 document.addEventListener("scroll",animeAuScroll);
+

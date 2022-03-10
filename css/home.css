@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#outils {
+  color: var(--color3);
+
+  display: inline-block;
+  transition: all 500ms ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    width: 90vw;
+  }
+  .home-container > div {
+    text-align: center;
+  }
+  .home-container > div > p {
+    font-size: 1em !important;
+  }
+}

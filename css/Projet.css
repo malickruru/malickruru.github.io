@@ -64,8 +64,10 @@
   opacity: 1;
 }
 .Projects {
-  text-align: center;
+  /* display: flex;
+  justify-content: center; */
   padding: 15px;
+  text-align: center;
 }
 
 .projetDescription {

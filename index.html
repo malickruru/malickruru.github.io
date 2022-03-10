@@ -18,7 +18,7 @@
     <header class="header ">
         <div class="brand"> <a class="MouverHoverClass" href="#accueil"><h3>Rubens Mensah.</h3></a></div>
         <ul class="nav-menu  ">
-         <li><a class="nav-menu-hover MouverHoverClass" href="#projet">Projets</a></li>
+         <li><a class="nav-menu-hover MouverHoverClass" href="#projet">Mes réalisations</a></li>
          <li><a class="nav-menu-hover MouverHoverClass" href="#Apropos">A propos</a></li>
          <li><a class="nav-menu-hover MouverHoverClass" href="#contact">Contact</a></li>
          <li id="changetheme"><i class="bi bi-moon" onclick="Changetheme()"></i></li>
@@ -40,22 +40,32 @@
 
     <!-- home -->
     <section class="home" id="accueil">
-        <div class="home-container">
-        <div ><h4>Bonjour, je m'appelle Rubens &#128075; </h4></div>
+        <div class="home-container" id="accueil_wrapper">
+        <div ><h4>Bonjour, je suis Rubens Mensah &#128075; </h4></div>
         <div ><h1 class="fontsize3">Je conçois des solutions pour le web</h1></div>
-        <div ><p class="fontsize2">Mes outils de travail sont <span id="outils" ></span></p>
+        <div >
+            <div id="typed-strings">
+                <p>Javascript vanilla</p>
+                <p>Wordpress</p>
+                <p>React.js</p>
+                <p>Laravel</p>
+              </div>
+            <p class="fontsize2">Je suis développeur <span id="outils" style="white-space:pre;" ></span></p>
         </div>
-        <div ><a href="mailto:rubs99rstd@gmail.com?subject=Sujet" class="btn MouverHoverClass">CONTACTEZ-MOI</a></div>
+        <div ><a href="#projet" class="btn MouverHoverClass " >voir mes réalisations</a>
+        <a href="mailto:rubs99rstd@gmail.com?subject=Sujet" class="btn MouverHoverClass">Contactez-moi</a></div>
         </div>
         </section>
     
     <!-- Portfolio carousel -->
         <section id="projet">
             <div class="Projects">
-                <h1>Mes projets</h1>
-                <img src="img/sort.png" class="icon2 sortIcon" alt="">
+               
+                    <h1>Mes réalisations</h1>
                 <span class="categorie categorie-active MouverHoverClass" onclick="changeactiveProjet(0, 'webApp')">Applications & sites web</span>
                 <span class="categorie MouverHoverClass" onclick="changeactiveProjet(1, 'jeux')">Jeux</span>
+                
+                <!-- <img src="img/sort.png" class="icon2 sortIcon" alt=""> -->
             </div>
             
             <div id="contenu" class="owl-carousel ">
@@ -72,54 +82,33 @@
 
     <!-- A propos -->
     <section id="Apropos">
-        <div class="Apropos-wrap">
-            <div class="photo">
-                <div class="photo-right">
-
-                </div>
-
-                <div class="photo-left">
-                    <div class="borderBottom">
-                        <div class="blackSquare">
-    
-                        </div>
-                    </div>
-                    <div class="borderBottom photo-left-2">
-                        <img class="PhotoHover"  id="PhotoHover" src="img/ruru.jpeg" alt="">
-                    </div>
-                    <div class="photo-left-3">
-                        <div class="blackSquare">
-    
-                        </div>
-                    </div>
-                </div>
-                
-
-            </div>
         
+            
+        <img class="PhotoHover"  id="PhotoHover" src="img/ruru.jpeg" alt="">
+                                          
         <div class="presentation">
-            <p>WEB DEVELOPER</p>
+            <p class="m-0">WEB DEVELOPER</p>
             <h1>RUBENS MENSAH</h1>
             <p>Je suis développeur web spécialisé front-end originaire de Côte d'ivoire.
                 Mon travail consiste à concevoir des solutions pour le web,et des jeux
-                vidéo. Je suis capable de porter un projet utilisant le framework react.js,
-                le CMS wordpress ou tout simplement en Javascript Vanilla.</p>
-            <a download href="assets/cv.pdf" class="btn MouverHoverClass">TELECHARGER MON CV</a>
-            <a href="mailto:rubs99rstd@gmail.com?subject=Sujet MouverHoverClass"  class="btn MouverHoverClass">CONTACTEZ-MOI</a>
+                vidéo. Je suis capable de porter un projet utilisant le framework <span title="React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état." class="spanSouligne MouverHoverClass">React.js</span> ,
+                le <span title="wp" class="spanSouligne MouverHoverClass">CMS wordpress</span>  ou tout simplement en <span title="js" class="spanSouligne MouverHoverClass">Javascript Vanilla</span> .</p>
+            <a download href="assets/cv.pdf" class="btn MouverHoverClass">télécharger mon cv</a>
+            <a href="mailto:rubs99rstd@gmail.com?subject=Sujet MouverHoverClass"  class="btn MouverHoverClass">contactez-moi</a>
         </div>
     </div>
     </section>
 
     <!-- footer -->
     <footer class="footer" id="contact">
-    Contactez-moi pour une collaboration 
+    Parlons ensemble de votre projet
         <div class="footerIcon">
             <a class="footerIconA" href="https://github.com/malickruru"><i class="bi bi-github"></i></a>
           <a class="footerIconA" href="https://www.linkedin.com/in/rubens-mensah-609b3b172/"><i class="bi bi-linkedin"></i></a>
           <a class="footerIconA" href="mailto:rubs99rstd@gmail.com?subject=Sujet"><i class="bi bi-envelope"></i></a>
         </div>
         <div class="copyright">
-            <p> &copy; 2022 - Rubens Mensah - développeur web </p>
+            <p> &copy; 2022 - Rubens Mensah - Développeur web </p>
         </div>
     </footer>
 
@@ -156,7 +145,7 @@
 
 
     <!-- Home -->
-    <script src="script/home.js"></script>
+    <!-- <script src="script/home.js"></script> -->
 
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -172,6 +161,20 @@
 
     <!-- cursor -->
     <script src="script/cursor.js"></script>
-    
+
+    <!-- typep.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="script/typed.js" type="text/javascript"></script>
+
+    <script>
+        var typed = new Typed("#outils", {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    backSpeed: 60,
+    backDelay: 400,
+    startDelay: 500,
+    loop: true
+  });
+    </script>
 </body>
 </html>

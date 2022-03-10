@@ -29,5 +29,5 @@ function EffaceOutils(){
 
 AfficheOutils();
 
-setInterval(EffaceOutils , 3000);
+setInterval(EffaceOutils , 2000);
 

@@ -63,7 +63,7 @@ header {
   cursor: none;
 }
 
-.nav-menu > li > a:after {
+/* .nav-menu > li > a:after {
   bottom: 0;
   content: "";
   display: block;
@@ -77,7 +77,7 @@ header {
 .nav-menu > li > a:hover:after {
   width: 100%;
   left: 0;
-}
+} */
 
 .nav-menu-mobile {
   display: flex;

@@ -14,11 +14,12 @@ function display(){
 display()
 
 var delay = 100;
-document.getElementById('accueil').childNodes.forEach(elem => {
+console.log(document.getElementById('accueil_wrapper').childNodes)
+document.getElementById('accueil_wrapper').childNodes.forEach(elem => {
     if(elem.nodeName == "DIV"){
-    elem.classList.add('Fadeup');
+    elem.classList.add('FadeRight');
     elem.style.animationDelay = delay+'ms';
-    delay += 100;}
+    delay += 200;}
 })
 
 

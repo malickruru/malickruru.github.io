@@ -88,6 +88,24 @@ section {
   .cursor {
     display: none;
   }
+
+  html {
+    cursor: auto;
+  }
+
+  .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .scrollCta {
+    display: none;
+  }
+
+  a.tooltip {
+    text-decoration: none;
+    color: var(--color2);
+  }
 }
 
 /* cursor */
@@ -138,16 +156,13 @@ a.tooltip-left:hover span {
 
 .scrollCta {
   position: absolute;
-  top: 95vh;
-  animation: scroll 1s infinite;
+  top: 90vh;
+  animation: scroll 1s infinite alternate;
   font-size: 1.5em;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateY(-5px);
-  }
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 }

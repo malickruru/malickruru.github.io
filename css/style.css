@@ -81,6 +81,10 @@ section {
   font-size: 1.5em;
 }
 
+.min-w {
+  min-width: 675px;
+}
+
 @media screen and (max-width: 769px) {
   section {
     height: auto;
@@ -110,10 +114,6 @@ section {
   .min-w {
     min-width: auto;
   }
-}
-
-.min-w {
-  min-width: 675px;
 }
 
 /* cursor */

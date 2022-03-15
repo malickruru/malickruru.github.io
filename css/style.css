@@ -188,6 +188,6 @@ a.tooltip-left:hover span {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--color2);
   border-radius: 10px;
 }

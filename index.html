@@ -12,10 +12,11 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    
 </head>
 <body>
     <!-- entete -->
-    <header class="header ">
+    <header class="header">
         <div class="brand"> <a class="MouverHoverClass" href="#accueil"><h3>Rubens Mensah.</h3></a></div>
         <ul class="nav-menu  ">
          <li><a class="nav-menu-hover MouverHoverClass" href="#projet">Mes réalisations</a></li>
@@ -32,16 +33,16 @@
 
     <div class="nav-menu-mobile" id="nav-menu-mobile">
             <i class="bi bi-x-lg" onclick="closeMenu()"></i>
-            <a href="#projet">Mes réalisations</a>
-            <a href="#Apropos">A propos</a>
-            <a href="#contact">Contact</a>
+            <a href="#projet" class="toggle-menu-link">Mes réalisations</a>
+            <a href="#Apropos" class="toggle-menu-link">A propos</a>
+            <a href="#contact" class="toggle-menu-link">Contact</a>
             <span id="changetheme2"><i class="bi  bi-brightness-high" onclick="Changetheme()"></i></span>
             <a  href="englishVersion.html">En</a>
            </ul>
     </div>
 
     <!-- home -->
-    <section class="home" id="accueil">
+    <section class="home" id="accueil" data-aos="fade-up-right">
         <div class="home-container" id="accueil_wrapper">
         <div ><h4>Bonjour, je suis Rubens Mensah &#128075; </h4></div>
         <div ><h1 class="fontsize3">Je conçois des solutions pour le web</h1></div>
@@ -137,10 +138,7 @@
     <!-- animation -->
 <script src="script/animation.js"></script>
 
-    <script src="script/loader.js"></script> 
-
-   
-
+<script src="script/loader.js"></script> 
     <!-- mode sombre -->
     <script src="script/darkmode.js"></script>
     <!-- toggle menu -->
@@ -150,7 +148,12 @@
         }
         function closeMenu(){
             document.getElementById("nav-menu-mobile").style.height="0vh";
+            
         }
+        document.querySelectorAll('.toggle-menu-link').forEach(elem =>
+            {
+                elem.addEventListener('click',closeMenu)
+            });
     </script>
 
 

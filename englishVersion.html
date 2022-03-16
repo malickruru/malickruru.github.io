@@ -148,9 +148,13 @@
         }
         function closeMenu(){
             document.getElementById("nav-menu-mobile").style.height="0vh";
+            
         }
+        document.querySelectorAll('.toggle-menu-link').forEach(elem =>
+            {
+                elem.addEventListener('click',closeMenu)
+            });
     </script>
-
 
     <!-- Home -->
     <!-- <script src="script/home.js"></script> -->
@@ -168,6 +172,7 @@
 
     <!-- cursor -->
     <script src="script/cursor.js"></script>
+    
 
     <!-- typep.js -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
@@ -185,3 +190,4 @@
     </script>
 </body>
 </html>
+

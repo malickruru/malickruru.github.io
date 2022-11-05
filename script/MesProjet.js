@@ -1,6 +1,15 @@
 const projets = {
     webApp : [
         {
+            Nom:"Institut français du numérique",
+            Id:"Ifran",
+            Description:"J'ai refait le site web de mon école en intégrant un système d'authentfication avec firebase pour les étudiant",
+            Image:"img/ifran.png",
+            lien_code_source:null,
+            lien:"https://ifran.firebaseapp.com/",
+            date:"Mai 2022"
+        },
+        {
             Nom:"MathKid",
             Id:"MathKid",
             Description:"Application permettant d'enseigner les maths au 9-12 ans",
@@ -28,13 +37,13 @@ const projets = {
             date:"sep 2021"
         },
         {
-            Nom:"Qr code scanner",
-            Id:"Qrcodescanner",
-            Description:"Application permettant de scanner un qr code",
-            Image:"img/qrcode.jpg",
-            lien_code_source:"https://github.com/malickruru/qrcode_lecteur",
-            lien:"https://7develop.com/2021/7scanning2021v01/wbqr.htm",
-            date:"avril 2021"
+            Nom:"Ruru-css",
+            Id:"ruru-css",
+            Description:"Publication d'un framework css sur npm faire : npm i ruru-css pour installer",
+            Image:"img/npm.png",
+            lien_code_source:'https://github.com/malickruru/rurucss',
+            lien:"https://www.npmjs.com/package/ruru-css",
+            date:"Nov 2022"
         }
     ],
     jeux: [
@@ -75,7 +84,7 @@ function changeactiveProjet(id, categorie) {
       listeProjets += "<h1 class='fontsize3'>"+elem.Nom+"</h1>";
       listeProjets += "<div class='projetDescription'>";
       listeProjets += "<p>"+elem.Description+"</p>";
-      elem.lien_code_source == null ? listeProjets += "<a href="+elem.lien+" target='_blank'>Voir le projet</a>" : listeProjets += "<a href="+elem.lien+" target='_blank'>Voir le projet</a> <a href="+elem.lien_code_source+" target='_blank'>Voir le code source</a>";
+      elem.lien_code_source == null ? listeProjets += "<a href="+elem.lien+" target='_blank'>Voir le projet</a>" : listeProjets += "<a href="+elem.lien+" target='_blank'>Voir le projet</a> | <a href="+elem.lien_code_source+" target='_blank'>Voir le code source</a>";
       listeProjets += "</div>";
       listeProjets += "</div>";
       listeProjets += "</div>";

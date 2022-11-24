@@ -90,7 +90,7 @@ function changeactiveProjet(id, categorie) {
       listeProjets += "</div>";
       listeProjets += "<div class='projectTitre'>";
       listeProjets += "<p>"+elem.date+"</p>";
-      listeProjets += "<h3 class='fontsize3'>"+elem.Nom+"</h3>";
+      listeProjets += "<h1 class='fontsize3'>"+elem.Nom+"</h1>";
       listeProjets += "<div class='projetDescription'>";
       listeProjets += "<p>"+elem.Description+"</p>";
       elem.lien_code_source == null ? listeProjets += "<a href="+elem.lien+" target='_blank'>See more</a>" : listeProjets += "<a href="+elem.lien+" target='_blank'>See more</a> | <a href="+elem.lien_code_source+" target='_blank'>See the source code</a>";

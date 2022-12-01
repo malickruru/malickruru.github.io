@@ -106,4 +106,4 @@ function changeactiveProjet(id, categorie) {
     // $('.owl-carousel').trigger('refresh.owl.carousel');
   }
   //initialiser le dom
-  displayProject('webApp')
+  displayProject('webApp') 
